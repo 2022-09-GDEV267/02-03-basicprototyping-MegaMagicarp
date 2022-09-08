@@ -310,15 +310,19 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -1616901602472701408, guid: bfea8cc92d8daef48b2b64531f0c859c, type: 3}
       propertyPath: speed
-      value: 10
+      value: 15
       objectReference: {fileID: 0}
+    - target: {fileID: -1616901602472701408, guid: bfea8cc92d8daef48b2b64531f0c859c, type: 3}
+      propertyPath: applePrefab
+      value: 
+      objectReference: {fileID: 734242477079815499, guid: 660b67921db374c408741d9276c3cc67, type: 3}
     - target: {fileID: -1616901602472701408, guid: bfea8cc92d8daef48b2b64531f0c859c, type: 3}
       propertyPath: leftAndRightEdge
       value: 20
       objectReference: {fileID: 0}
     - target: {fileID: -1616901602472701408, guid: bfea8cc92d8daef48b2b64531f0c859c, type: 3}
       propertyPath: chanceToChangeDirections
-      value: 0.2
+      value: 0.05
       objectReference: {fileID: 0}
     - target: {fileID: 3601756497453261609, guid: bfea8cc92d8daef48b2b64531f0c859c, type: 3}
       propertyPath: m_RootOrder
@@ -363,6 +367,10 @@ PrefabInstance:
     - target: {fileID: 3601756497453261609, guid: bfea8cc92d8daef48b2b64531f0c859c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6940565529954051374, guid: bfea8cc92d8daef48b2b64531f0c859c, type: 3}
+      propertyPath: m_IsKinematic
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7837206277801008442, guid: bfea8cc92d8daef48b2b64531f0c859c, type: 3}
       propertyPath: m_Name

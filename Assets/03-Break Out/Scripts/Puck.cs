@@ -32,7 +32,7 @@ public class Puck : MonoBehaviour
         this.transform.position = pos;
 
         //keep Puck from going out of bounds
-        if(puck.Transform.Position.x <= 3.75 || mousePos3D.x >= -3.75)
+        if(puck.transform.position.x <= 3.75 || mousePos3D.x >= -3.75)
         {
 
         }

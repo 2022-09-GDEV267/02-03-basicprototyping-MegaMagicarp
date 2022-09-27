@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Puck : MonoBehaviour
 {
+    public float minX = -3.75f;
+    public float maxX = 3.75f;
     [Header("Set in Inspector")]
     public GameObject puck;
     // Start is called before the first frame update
@@ -29,12 +31,16 @@ public class Puck : MonoBehaviour
 
         pos.x = mousePos3D.x;
 
-        this.transform.position = pos;
-
-        //keep Puck from going out of bounds
-        if(puck.transform.position.x <= 3.75 || mousePos3D.x >= -3.75)
+        if(pos.x < minX)
         {
-
+            pos.x = minX;
         }
+
+        if(pos.x > maxX)
+        {
+            pos.x = maxX;
+        }
+
+        this.transform.position = pos;
     }
 }

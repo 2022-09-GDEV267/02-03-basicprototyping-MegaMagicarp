@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Puck : MonoBehaviour
 {
+    [Header("Set in Inspector")]
+    public GameObject puck;
     // Start is called before the first frame update
     void Start()
     {
@@ -28,5 +30,11 @@ public class Puck : MonoBehaviour
         pos.x = mousePos3D.x;
 
         this.transform.position = pos;
+
+        //keep Puck from going out of bounds
+        if(puck.Transform.Position.x <= 3.75 || mousePos3D.x >= -3.75)
+        {
+
+        }
     }
 }

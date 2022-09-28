@@ -6,16 +6,28 @@ public class BreakOutManager : MonoBehaviour
 {
     [Header("Set in Inspector")]
     public GameObject prefabBall;
-    
+    public GameObject[] levels;
+    public Vector3 levelPos;
     
     [Header("Set Dynamicaly")]
     public GameObject ball;
+    public GameObject level;
+    public int spot;
 
 
     // Start is called before the first frame update
     void Start()
     {
+        spot = 0;
+        StartLevel();
         NewBall();
+    }
+
+    public void StartLevel()
+    {
+        level = Instantiate<GameObject>(levels[spot]);
+
+        level.transform.position = levelPos;
     }
 
     public void NewBall()

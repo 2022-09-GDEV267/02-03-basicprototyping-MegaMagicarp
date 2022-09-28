@@ -26,7 +26,7 @@ public class Ball : MonoBehaviour
         Vector3 POS = this.transform.position;
         POS = POS + deltaPOS;
         this.transform.position = POS;
-        if(transform.position.x < -4.5f)
+        if(transform.position.y < -4f)
         {
             Destroy(this.gameObject);
             
@@ -44,6 +44,11 @@ public class Ball : MonoBehaviour
         if(GO.CompareTag("LWall") == true || GO.CompareTag("RWall") == true)
         {
             ballSpeed.x = ballSpeed.x * -1;
+        }
+        if(GO.CompareTag("Brick") == true)
+        {
+            Destroy(GO);
+            ballSpeed.y = ballSpeed.y * -1;
         }
     }
 }

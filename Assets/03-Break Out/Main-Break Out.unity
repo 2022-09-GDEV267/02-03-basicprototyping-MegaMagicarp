@@ -250,7 +250,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prefabBall: {fileID: 2925240629391038468, guid: 4a53dc57cf54bb34f921fbbc7a0e3a04, type: 3}
+  levels:
+  - {fileID: 1214547611310091072, guid: 4dac86f39e7f36f4eba7ffcbba805a8a, type: 3}
+  levelPos: {x: 0, y: 0, z: 0}
   ball: {fileID: 0}
+  level: {fileID: 0}
+  spot: 0
 --- !u!4 &356723502
 Transform:
   m_ObjectHideFlags: 0

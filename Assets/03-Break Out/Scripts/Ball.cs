@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Ball : MonoBehaviour
 {
-    [Header("Set in Inspector")]
+    //[Header("Set in Inspector")]
     
     
     
@@ -26,7 +26,7 @@ public class Ball : MonoBehaviour
         Vector3 POS = this.transform.position;
         POS = POS + deltaPOS;
         this.transform.position = POS;
-        if(transform.position.y < -4.5f)
+        if(transform.position.x < -4.5f)
         {
             Destroy(this.gameObject);
             
@@ -36,9 +36,14 @@ public class Ball : MonoBehaviour
     private void OnCollisionEnter(Collision collision)
     {
         GameObject GO = collision.gameObject;
-        if(GO.CompareTag("Puck") == true)
+        if(GO.CompareTag("Puck") == true || GO.CompareTag("TWall") == true)
         {
             ballSpeed.y = ballSpeed.y * -1;
+        }
+
+        if(GO.CompareTag("LWall") == true || GO.CompareTag("RWall") == true)
+        {
+            ballSpeed.x = ballSpeed.x * -1;
         }
     }
 }

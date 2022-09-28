@@ -8,6 +8,9 @@ TagManager:
   - Projectile
   - Puck
   - LWall
+  - Brick
+  - TWall
+  - RWall
   layers:
   - Default
   - TransparentFX

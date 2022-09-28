@@ -10,13 +10,14 @@ public class Ball : MonoBehaviour
     
     [Header("Set Dynamicaly")]
     public Vector2 ballSpeed;
-    
+    private BreakOutManager BOM;
 
 
     // Start is called before the first frame update
     void Start()
     {
         ballSpeed = new Vector2(3f, -4f);
+        BOM = GameObject.Find("Manager").GetComponent<BreakOutManager>();
     }
 
     // Update is called once per frame
@@ -29,7 +30,8 @@ public class Ball : MonoBehaviour
         if(transform.position.y < -4f)
         {
             Destroy(this.gameObject);
-            
+
+            BOM.NewBall();
         }
     }
 
@@ -49,6 +51,7 @@ public class Ball : MonoBehaviour
         {
             Destroy(GO);
             ballSpeed.y = ballSpeed.y * -1;
+            BOM.BrickCount--;
         }
     }
 }

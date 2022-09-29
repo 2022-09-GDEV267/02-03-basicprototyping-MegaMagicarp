@@ -252,6 +252,8 @@ MonoBehaviour:
   prefabBall: {fileID: 2925240629391038468, guid: 4a53dc57cf54bb34f921fbbc7a0e3a04, type: 3}
   levels:
   - {fileID: 1214547611310091072, guid: 4dac86f39e7f36f4eba7ffcbba805a8a, type: 3}
+  - {fileID: 1214547611310091072, guid: ec2e29a38ad390b439f9a563f04bc173, type: 3}
+  - {fileID: 1214547611310091072, guid: 85f33decaf2533949acb076302b37069, type: 3}
   levelPos: {x: 0, y: 0, z: 0}
   ball: {fileID: 0}
   level: {fileID: 0}

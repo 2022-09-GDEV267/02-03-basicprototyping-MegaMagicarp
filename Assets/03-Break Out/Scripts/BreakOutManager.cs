@@ -64,10 +64,5 @@ public class BreakOutManager : MonoBehaviour
         {
             NextLevel();
         }
-        //if(ball.transform.position.y < -4.5f)
-        //{
-        //    Destroy(this.gameObject);
-        //    NewBall();
-        //}
     }
 }
